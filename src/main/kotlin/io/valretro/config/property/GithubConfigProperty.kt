@@ -1,4 +1,5 @@
 package io.valretro.config.property
 
-class GithubConfigProperty {
-}
+data class GithubConfigProperty(
+    val token: String,
+)

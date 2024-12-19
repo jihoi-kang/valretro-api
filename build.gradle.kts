@@ -24,7 +24,17 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
-    runtimeOnly("com.mysql:mysql-connector-j")
+
+    // http client
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+
+    // ulid
+    implementation("com.github.f4b6a3:ulid-creator:5.2.3")
+
+    // postgres
+    runtimeOnly("org.postgresql:postgresql")
+
+    // test
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
